@@ -1,0 +1,10 @@
+nsComment = "BERITH ENTERPRISE Generated Certificate with OpenSSL"
+basicConstraints = critical,CA:TRUE
+#keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+keyUsage = critical,Digital Signature, Key Encipherment, Certificate Sign, CRL Sign
+#extendedKeyUsage = serverAuth, clientAuth, codeSigning, emailProtection
+#extendedKeyUsage = Any Extended Key Usage
+extendedKeyUsage = TLS Web Client Authentication, TLS Web Server Authentication
+subjectKeyIdentifier = hash
+#authorityKeyIdentifier = keyid,issuer
+subjectAltName = DNS:ca0.testnet.com
